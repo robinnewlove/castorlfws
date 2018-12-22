@@ -1,3 +1,172 @@
 @import "../../assets/scss/_define";
 @import "../../assets/scss/common";
+@import "../../assets/scss/workshop";
 
+.app{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    background: url('../../assets/images/css/persion-head-bg.jpg') center j(39) no-repeat;
+    background-size: 100% auto;
+    padding-bottom: j(30);
+}
+.header{
+    margin-bottom: j(168);
+}
+.user-info{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    font-size: j(14);
+    color: #333333;
+    i{
+        @extend %bg1;
+        width: j(16);
+        height: j(16);
+        margin-right: j(5);
+    }
+    .name-icon{
+        background-position: 0 j(-188);
+    }
+    .tel-icon{
+        margin-left: j(30);
+        background-position: j(-26) j(-188);
+    }
+}
+.button-wrap{
+    @extend %df;
+    @extend %fww;
+    width: j(335);
+    margin-top: j(13);
+    justify-content: space-between;
+}
+.button-link{
+    @extend %cp;
+    @extend %bg1;
+    width: j(165);
+    height: j(43);
+    margin-bottom: j(5);
+    &.link-1{
+        background-position: 0 j(-275);
+    }
+    &.link-2{
+        background-position: j(-169) j(-275);
+    }
+    &.link-3{
+        background-position: 0 j(-321.5);
+    }
+}
+.workshop-info{
+    @extend %df;
+    @extend %aic;
+    @extend %bsb;
+    @extend %jcc;
+    margin-top: j(10);
+    width: j(335);
+    height: j(49);
+    border: 2px solid #0e773b;
+    padding: 0 j(30);
+    border-radius: j(8);
+    font-size: j(14);
+    color: #333;
+    line-height: j(15);
+    i{
+        @extend %bg1;
+        @extend %db;
+        width: j(20);
+        height: j(28);
+        background-position: 0 j(-364.5);
+        margin-right: j(8);
+    }
+}
+.workshop-label{
+    color: #0e773b;
+}
+.workshop-value{
+    @extend %df1;
+    @extend %oh;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: j(15);
+}
+
+.prompt{
+    @extend %tar;
+    width: j(332);
+    margin-top: j(5);
+}
+.prompt-link{
+    @extend %cp;
+    font-size: j(14);
+    color: #0f7c43;
+    line-height: j(16);
+    border-bottom: 1px solid #0f7c43;
+}
+
+.list{
+    @extend %df;
+    margin-top: j(12);
+    width: j(335);
+    justify-content: space-between;
+}
+.item{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    width: j(77.5);
+    i{
+        @extend %db;
+        @extend %bg1;
+        width: j(77.5);
+        height: j(77.5);
+    }
+    &.item-1{
+        i{
+            background-position: 0 j(-432);
+        }
+    }
+    &.item-2{
+        i{
+            background-position: j(-86.5) j(-432);
+        }
+    }
+    &.item-3{
+        i{
+            background-position: j(-173) j(-432);
+        }
+    }
+    &.item-4{
+        i{
+            background-position: j(-259) j(-432);
+        }
+    }
+    p{
+        @extend %tac;
+        line-height: 1.5;
+        font-size: j(14);
+        color: #333;
+    }
+    .num{
+        @extend %fwb;
+        font-size: j(18);
+        color: #0f7c43;
+    }
+}
+.button{
+    @extend %pa;
+    right: j(18);
+    top: j(32);
+    background-position: 0 j(-406);
+    height: j(22);
+    width: j(77);
+    span{
+        font-size: j(10);
+    }
+    i{
+        @extend %bg1;
+        width: j(12.5);
+        height: j(12.5);
+        background-position: 0 j(-392);
+        margin-right: j(2);
+    }
+}

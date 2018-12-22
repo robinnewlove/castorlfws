@@ -1,3 +1,42 @@
 @import "../../../../assets/scss/_define";
 @import "../../../../assets/scss/common";
+@import "../../../../assets/scss/workshop";
 
+.app{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+}
+.header{
+    margin-bottom: j(90);
+}
+.image{
+    width: j(241);
+    height: j(215);
+}
+.prompt{
+    font-size: j(16);
+    color: #333;
+    margin-top: j(5);
+}
+.prompt-sub{
+    margin-top: j(5);
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    font-size: j(16);
+    color: #999;
+    i{
+        @extend %db;
+        width: j(5);
+        height: j(5);
+        border-radius: 50%;
+        background-color: #cbcbcb;
+    }
+    p{
+        margin: 0 j(10);
+        span{
+            color: #069641;
+        }
+    }
+}
