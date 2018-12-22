@@ -1,3 +1,62 @@
 @import "../../../assets/scss/_define";
 @import "../../../assets/scss/common";
+@import "../../../assets/scss/workshop";
 
+.app{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+}
+.header{
+    margin-bottom: j(110);
+}
+.title{
+    font-size: j(18);
+    color: #0e773b;
+}
+.list{
+    margin-top: j(20);
+    @extend %df;
+    @extend %fww;
+    width: j(310);
+    justify-content: space-between;
+}
+.item{
+    @extend %bsb;
+    @extend %pr;
+    @extend %cp;
+    background-color: rgba(255,255,255,.6);
+    background-size: 30%;
+    margin-bottom: j(8);
+    border: 1px dashed #dedede;
+    width: j(98);
+    height: j(98);
+    border-radius: j(5);
+    &.bg{
+        background: rgba(255,255,255,.6) url("../../../assets/images/css/upload-icon.png") no-repeat center;
+    }
+    img{
+        @extend %pa;
+        @extend %t0;
+        @extend %l0;
+        @extend %r0;
+        @extend %b0;
+        @extend %w100;
+        @extend %h100;
+    }
+    input{
+        @extend %pr;
+        @extend %w100;
+        @extend %h100;
+        opacity: 0;
+        background: transparent;
+        border: none;
+    }
+}
+.prompt{
+    font-size: j(12);
+    color: red;
+}
+.button{
+    margin: j(85) auto 0;
+}

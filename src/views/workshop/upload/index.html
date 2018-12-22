@@ -6,13 +6,81 @@
     <!--手机开发屏幕自适应-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <!--设置标题-->
-    <title>下载码可</title>
-    <!--引入ico-->
-    <!--<link rel="shortcut icon" href="static/favicon.ico?v=2">-->
+    <title>上传图片</title>
     <script src="assets/lib/flexible.js"></script>
 </head>
 <body>
+<div class="app">
+    <div class="header"></div>
+    <h2 class="title">请上传您的会议照片</h2>
+    <ul class="list">
+        <li class="item">
+            <img src="../../../assets/images/html/upload-default-icon.png" alt="">
+            <input type="file" accept="image/gif,image/jpg,image/jpeg,image/bmp,image/png">
+        </li>
+        <li class="item">
+            <img src="../../../assets/images/html/upload-default-icon.png" alt="">
+            <input type="file" accept="image/gif,image/jpg,image/jpeg,image/bmp,image/png">
+        </li>
+        <li class="item">
+            <img src="../../../assets/images/html/upload-default-icon.png" alt="">
+            <input type="file" accept="image/gif,image/jpg,image/jpeg,image/bmp,image/png">
+        </li>
+        <li class="item">
+            <img src="../../../assets/images/html/upload-default-icon.png" alt="">
+            <input type="file" accept="image/gif,image/jpg,image/jpeg,image/bmp,image/png">
+        </li>
+        <li class="item">
+            <img src="../../../assets/images/html/upload-default-icon.png" alt="">
+            <input type="file" accept="image/gif,image/jpg,image/jpeg,image/bmp,image/png">
+        </li>
+        <li class="item">
+            <img src="../../../assets/images/html/upload-default-icon.png" alt="">
+            <input type="file" accept="image/gif,image/jpg,image/jpeg,image/bmp,image/png">
+        </li>
+    </ul>
+    <p class="prompt">*请至少上传一张照片</p>
+    <div class="button">
+        <span>结束会议</span>
+    </div>
 
+    <div class="popup-wrap hidden">
+        <div class="popup-inner">
+            <div class="popup-con">
+                <p>您已完成本场研讨会<br>
+                    点击查看报告获取会议编号<br>
+                确保您后续的报销流程</p>
+            </div>
+            <div class="button blue">
+                <span>查看报告</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-wrap hidden">
+        <div class="popup-inner">
+            <div class="popup-con">
+                <p class="red">会议未开始</p>
+                <p>会议时间：2018-12-12</p>
+            </div>
+            <div class="button blue">
+                <span>确　定</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-wrap hidden">
+        <div class="popup-inner">
+            <div class="popup-con">
+                <p>会议申请未通过</p>
+                <p>请联系管理人员</p>
+            </div>
+            <div class="button blue">
+                <span>确　定</span>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
 

@@ -1,0 +1,87 @@
+@import "./_define";
+%bg1{
+    background: url("~assets/images/css/icon-bg.png") no-repeat;
+    background-size: j(500, 500);
+}
+
+html {
+    background: url('~assets/images/css/workshop-center-bg.jpg') center repeat-y;
+    background-size: 100% auto;
+    height: 100%;
+}
+
+body {
+    //background: url('~assets/images/css/workshop-bottom-bg.jpg') center bottom no-repeat;
+    background: url('~assets/images/css/workshop-footer-bg.jpg') center bottom no-repeat;
+    background-size: 100% auto;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.header{
+    @extend %w100;
+    height: j(40);
+    background: url('~assets/images/css/head-bar-bg.jpg') center top no-repeat;
+    background-size: contain;
+}
+
+.app{
+    //background: url('~assets/images/css/workshop-top-bg.jpg') center j(40) no-repeat;
+    background: url('~assets/images/css/workshop-head-bg.jpg') center j(39) no-repeat;
+    background-size: 100% auto;
+    padding-bottom: j(30);
+}
+
+
+.button{
+    @extend %cp;
+    @extend %df;
+    @extend %fwb;
+    @extend %cfff;
+    @extend %jcc;
+    @extend %aic;
+    @extend %bg1;
+    font-size: j(15);
+    width: j(119);
+    height: j(38);
+    margin: j(25) auto 0;
+    background-position: 0 j(-57);
+    &.blue{
+        background-position: 0 j(-95);
+    }
+}
+
+.popup-wrap{
+    @extend %pf;
+    @extend %l0;
+    @extend %r0;
+    @extend %b0;
+    @extend %t0;
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    background-color: rgba(0, 0, 0, .3);
+    .button{
+        margin-top: j(20);
+    }
+}
+.popup-inner{
+    @extend %df;
+    @extend %jcc;
+    @extend %fdc;
+    @extend %aic;
+    background-color: #efefef;
+    border: 1px solid #dedede;
+    border-radius: j(10);
+    width: j(330);
+    height: j(190);
+}
+.popup-con{
+    @extend %tac;
+    font-size: j(18);
+    color: #2b2c2c;
+    line-height: 1.5;
+    .red{
+        color: red;
+    }
+}

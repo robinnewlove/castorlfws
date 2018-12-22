@@ -2,8 +2,6 @@
 @import "../../assets/scss/_define";
 html, body {
     @extend %pr;
-    @extend %h100;
-    @extend %oh;
 }
 body {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;

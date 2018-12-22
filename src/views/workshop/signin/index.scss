@@ -1,3 +1,74 @@
 @import "../../../assets/scss/_define";
 @import "../../../assets/scss/common";
+@import "../../../assets/scss/workshop";
 
+.app{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+}
+.header{
+    margin-bottom: j(70);
+}
+.title{
+    font-size: j(18);
+    color: #0e773b;
+    margin-top: j(25);
+}
+.info{
+    @extend %bsb;
+    margin: j(10) auto 0;
+    width: j(330);
+    border: 1px solid #dedede;
+    border-radius: j(10);
+    background-color: rgba(255, 255, 255, .3);
+    padding: j(22) j(25);
+}
+.info-item{
+    @extend %df;
+    @extend %aic;
+    font-size: j(13);
+    line-height: j(20);
+    i{
+        @extend %db;
+        border-radius: 50%;
+        width: j(10);
+        height: j(10);
+        background-color: #a2ceb5;
+        margin-right: j(10);
+    }
+    span{
+        color: #757575;
+    }
+    .color{
+        color: #333333;
+    }
+}
+.prompt{
+    line-height: 1.5;
+    font-size: j(13);
+    color: #757575;
+}
+.image{
+    @extend %db;
+    margin-top: j(14);
+    width: j(132);
+    height: j(132);
+}
+.number{
+    color: #000;
+    font-size: j(18);
+    margin-top: j(20);
+    span{
+        color: #0e773b;
+    }
+}
+.button-wrap{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    margin-top: j(20);
+    .button{
+        margin: 0 j(10);
+    }
+}
