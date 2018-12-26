@@ -45,6 +45,8 @@
     }
     .value{
         @extend %df1;
+        width: j(160);
+        word-wrap: break-word;
         color: #333333;
     }
 }
