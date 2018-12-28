@@ -70,15 +70,29 @@ body{
         background-color: #fff;
         color: #333;
     }
+    .select2-selection__arrow{
+        @extend %dn;
+    }
+
+    .select2-selection--single{
+        border: none !important;
+        height: j(42);
+        width: j(254);
+    }
+    .select2-selection__rendered{
+        line-height: j(42) !important;
+    }
+    .select2-selection__rendered,
     select{
         @extend %w100;
         @extend %h100;
         @extend %bsb;
+        outline: none;
         padding: 0 j(10);
         appearance:none;
         -moz-appearance:none;
         -webkit-appearance:none;
-        border: none;
+        border: none !important;
         background: url("../../../assets/images/css/select-icon1.png") right center no-repeat;
         background-size: j(44);
     }

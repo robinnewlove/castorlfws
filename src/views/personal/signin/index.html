@@ -10,6 +10,9 @@
     <!--引入ico-->
     <!--<link rel="shortcut icon" href="static/favicon.ico?v=2">-->
     <script src="assets/lib/flexible.js"></script>
+    <script src="assets/lib/jquery-1.8.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 </head>
 <body>
     <div class="app">
@@ -29,7 +32,7 @@
                 <input type="text" placeholder="请输入姓名">
             </div>
             <div class="form-box">
-                <select>
+                <select id="area">
                     <option>-请选择职位-</option>
                 </select>
             </div>
@@ -39,5 +42,11 @@
         </div>
     </div>
 </body>
+<script type="text/javascript">
+    //页面加载完成后初始化select2控件
+    $(function () {
+        $("#area").select2();
+    });
+</script>
 </html>
 
