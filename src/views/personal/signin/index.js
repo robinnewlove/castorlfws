@@ -4,27 +4,20 @@
 // 控制器
 const Controller = {
     init () {
-        let eleInput = this.getTagName('input');
-        let eleSelect = this.getTagName('select');
-        let eleTextarea = this.getTagName('textarea');
-        this.addListener(eleInput);
-        this.addListener(eleSelect);
-        this.addListener(eleTextarea);
+        let eleApp = document.getElementsByTagName("body")[0];
+        eleApp.addEventListener('blur', this.handleBlur, true)
     },
-    getTagName (name) {
-        let ele = document.getElementsByTagName(name);
-        return ele ? Array.prototype.slice.apply(ele) : [];
-    },
-    addListener (arr, event ='blur') {
-        arr.forEach((item) => {
-            item.addEventListener(event, this.handleBlur);
-        })
-    },
-    handleBlur () {
-        setTimeout(() => {
-            const scrollHeight = document.documentElement.scrollTop || document.body.scrollTop || 0;
-            window.scrollTo(0, Math.max(scrollHeight - 1, 0));
-        }, 100);
+    handleBlur (event) {
+        let target = event.target || {};
+        if (target.nodeName
+            && (target.nodeName.toLocaleUpperCase() === 'INPUT'
+            || target.nodeName.toLocaleUpperCase() === 'SELECT'
+            || target.nodeName.toLocaleUpperCase() === 'TEXTAREA')) {
+            setTimeout(() => {
+                const scrollHeight = document.documentElement.scrollTop || document.body.scrollTop || 0;
+                window.scrollTo(0, Math.max(scrollHeight - 1, 0));
+            }, 100);
+        }
     },
 };
 Controller.init();
