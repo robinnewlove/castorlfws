@@ -27,7 +27,7 @@
     @extend %cp;
     background-color: rgba(255,255,255,.6);
     background-size: 30%;
-    margin-bottom: j(8);
+    margin-bottom: j(40);
     border: 1px dashed #dedede;
     width: j(98);
     height: j(98);
@@ -52,11 +52,24 @@
         background: transparent;
         border: none;
     }
+    .prompt{
+        @extend %pa;
+        @extend %w100;
+        @extend %tac;
+        bottom: j(-30);
+        line-height: j(22);
+        color: #5e5e5e;
+        font-size: j(12);
+        span{
+            color: red;
+        }
+    }
 }
 .prompt{
+    margin-top: j(20);
     font-size: j(12);
     color: red;
 }
 .button{
-    margin: j(85) auto 0;
+    margin: j(25) auto 0;
 }
