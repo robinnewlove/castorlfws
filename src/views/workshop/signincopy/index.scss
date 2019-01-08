@@ -1,0 +1,47 @@
+@import "../../../assets/scss/_define";
+@import "../../../assets/scss/common";
+@import "../../../assets/scss/workshop";
+
+.app{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+}
+.header{
+    margin-bottom: j(90);
+}
+.prompt{
+    margin-top: j(10);
+    font-size: j(13);
+    color: red;
+    span{
+        @extend %dib;
+        margin-left: j(5);
+        line-height: j(20);
+        font-size: j(13);
+        color: #333;
+        border-bottom: 1px solid #333;
+    }
+}
+.image{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+.number{
+    color: #000;
+    font-size: j(18);
+    margin-top: j(20);
+    span{
+        color: #0e773b;
+    }
+}
+.button-wrap{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    margin-top: j(20);
+    .button{
+        margin: 0 j(10);
+    }
+}
