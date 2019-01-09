@@ -89,7 +89,8 @@
     @extend %oh;
     text-overflow: ellipsis;
     white-space: nowrap;
-    height: j(15);
+    height: j(18);
+    line-height: j(18);
 }
 .workshop-link{
     @extend %tac;
