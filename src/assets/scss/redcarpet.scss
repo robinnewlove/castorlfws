@@ -27,3 +27,51 @@ body {
     background-size: 100% auto;
     padding-bottom: j(30);
 }
+
+.red-carpet{
+    &.popup-wrap{
+
+    }
+    .popup-inner{
+        @extend %pr;
+        padding-top: j(50);
+        display: block;
+        height: auto;
+    }
+    .popup-image{
+        @extend %pa;
+        @extend %l50;
+        top: j(-36);
+        margin-left: j(-36);
+        background: url('~assets/images/css/red-carpet-pop-icon.png') no-repeat;
+        width: j(72);
+        height: j(72);
+        background-size: contain;
+    }
+    .popup-con{
+
+    }
+    .popup-footer{
+        @extend %pr;
+        @extend %df;
+        @extend %aic;
+        @extend %jcc;
+        padding: j(20) 0;
+        margin-top: j(20);
+        &:after{
+            background: url("~assets/images/css/icon-bg.png") no-repeat;
+            background-size: j(500, 600);
+            @extend %pa;
+            @extend %l50;
+            margin-left: j(-150);
+            content: '';
+            background-position: 0 j(-169);
+            width: j(300);
+            height: j(8);
+            top: 0;
+        }
+    }
+    .button{
+        margin: 0;
+    }
+}
