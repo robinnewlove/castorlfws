@@ -1,0 +1,38 @@
+@import "../../../assets/scss/_define";
+@import "../../../assets/scss/common";
+@import "../../../assets/scss/redcarpet";
+
+.app{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+}
+.header{
+    margin-bottom: j(90);
+}
+.prompt{
+    font-size: j(13);
+    color: red;
+    margin: j(10) auto j(20);
+}
+.image{
+    @extend %db;
+    @extend %w100;
+    height: auto;
+}
+.number{
+    color: #757575;
+    font-size: j(18);
+    span{
+        color: #0e773b;
+    }
+}
+.button-wrap{
+    @extend %df;
+    @extend %aic;
+    @extend %jcc;
+    margin-top: j(20);
+    .button{
+        margin: 0 j(10);
+    }
+}
