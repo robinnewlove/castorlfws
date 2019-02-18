@@ -55,6 +55,10 @@
     &.link-3{
         background-position: 0 j(-321.5);
     }
+    &.link-4{
+        background: url("../../assets/images/css/red-carpet-button-icon.png") no-repeat;
+        background-size: contain;
+    }
 }
 .workshop-info{
     @extend %df;
