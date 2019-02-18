@@ -51,7 +51,7 @@
 .check{
     @extend %df;
     @extend %aic;
-    flex-wrap: wrap;
+    @extend %fww;
     height: auto;
     padding-top: j(10);
 }

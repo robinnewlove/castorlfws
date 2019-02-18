@@ -1,6 +1,6 @@
-@import "../../assets/scss/_define";
-@import "../../assets/scss/common";
-@import "../../assets/scss/redcarpet";
+@import "../../../../../assets/scss/_define";
+@import "../../../../../assets/scss/common";
+@import "../../../../../assets/scss/redcarpet";
 
 .app{
     @extend %df;
@@ -36,7 +36,7 @@
     @extend %aic;
     @extend %jcc;
     width: j(332);
-    margin-top: j(12);
+    margin: j(16) auto;
 }
 .base-item{
     @extend %df;
@@ -58,49 +58,6 @@
     margin-top: j(3);
     font-size: j(12);
     color: #333333;
-}
-.button-link{
-    @extend %cp;
-    background: url("../../assets/images/css/red-carpet-apply-button-icon.png");
-    background-size: contain;
-    width: j(332);
-    height: j(49);
-    margin-top: j(12);
-}
-.workshop-info{
-    @extend %df;
-    @extend %aic;
-    @extend %bsb;
-    margin-top: j(5);
-    width: j(332);
-    height: j(49);
-    border: 2px solid #0e773b;
-    padding: 0 j(10);
-    border-radius: j(8);
-    font-size: j(14);
-    color: #333;
-    line-height: j(15);
-}
-.workshop-label{
-    color: #0e773b;
-}
-.workshop-value{
-    @extend %df1;
-    @extend %oh;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    height: j(18);
-    line-height: j(18);
-}
-.workshop-link{
-    @extend %tac;
-    @extend %cfff;
-    @extend %cp;
-    width: j(74);
-    height: j(26);
-    line-height: j(26);
-    background-color: #e40520;
-    border-radius: j(4);
 }
 .title{
     @extend %fwn;
@@ -160,7 +117,8 @@
         margin-top: j(7);
     }
     span{
-        @extend %df1;
+        //@extend %df1;
+        margin-right: j(10);
     }
 }
 .item-value{
