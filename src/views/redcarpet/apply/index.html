@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--设置字符编码-->
+    <meta charset="UTF-8">
+    <!--手机开发屏幕自适应-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--设置标题-->
+    <title>预约红毯培训</title>
+    <script src="assets/lib/flexible.js"></script>
+    <script src="assets/lib/jquery-1.8.1.min.js"></script>
+
+    <!--!!!这可以删除-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <!--/!!!这可以删除-->
+
+</head>
+<body>
+    <div class="app">
+        <div class="header"></div>
+        <div class="container">
+            <div class="input-box">
+                <label class="label key">会议时间</label>
+                <input class="input value" type="text" placeholder=""/>
+            </div>
+            <div class="input-box">
+                <label class="label key">会议类型</label>
+                <div class="radio value">
+                    <div class="radio-item active">
+                        <i></i>
+                        <span>集团培训</span>
+                    </div>
+                    <div class="radio-item">
+                        <i></i>
+                        <span>OEM培训</span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label key"></label>
+                <div class="select value">
+                    <select id="area">
+                        <option>-请选择集团-</option>
+                        <option value="1">珠海</option>
+                        <option value="2">深圳</option>
+                        <option value="3">澳门</option>
+                        <option value="4">香港</option>
+                        <option value="1">珠海</option>
+                        <option value="2">深圳</option>
+                        <option value="3">澳门</option>
+                        <option value="4">香港</option>
+                        <option value="1">珠海</option>
+                        <option value="2">深圳</option>
+                        <option value="3">澳门</option>
+                        <option value="4">香港</option>
+                        <option value="1">珠海</option>
+                        <option value="2">深圳</option>
+                        <option value="3">澳门</option>
+                        <option value="4">香港</option>
+                        <option value="1">珠海</option>
+                        <option value="2">深圳</option>
+                        <option value="3">澳门</option>
+                        <option value="4">香港</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label key">省　　市</label>
+                <div class="value select-wrap">
+                    <div class="select">
+                        <select>
+                            <option>-省-</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select>
+                            <option>-市-</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label key">申请费用</label>
+                <input class="input value" type="text" placeholder=""/>
+            </div>
+            <div class="input-box">
+                <label class="label key">人　　数</label>
+                <input class="input value" type="text" placeholder=""/>
+            </div>
+            <div class="input-box">
+                <label class="label key">会议主题</label>
+                <input class="input value" type="text" placeholder=""/>
+            </div>
+            <div class="input-box">
+                <label class="label key">会议说明</label>
+                <textarea class="input value textarea"></textarea>
+            </div>
+        </div>
+        <div class="button">
+            <span>提交申请</span>
+        </div>
+    </div>
+    <div class="popup-wrap hidden">
+        <div class="popup-inner">
+            <div class="popup-con">
+                <p>您已成功创建研讨会<br>
+                    请在会议当天签到并提交照片</p>
+            </div>
+            <div class="button blue">
+                <span>返　回</span>
+            </div>
+        </div>
+    </div>
+</body>
+<!--!!!这可以删除-->
+<script type="text/javascript">
+
+    //页面加载完成后初始化select2控件
+    $(function () {
+        $("#area").select2();
+    });
+</script>
+<!--/!!!这可以删除-->
+</html>
+
