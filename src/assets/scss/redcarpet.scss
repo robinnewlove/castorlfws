@@ -50,6 +50,10 @@ body {
     }
     .popup-con{
         padding: 0 j(20);
+        &.blue-color {
+            margin-bottom: j(20);
+            color: #00993f;
+        }
     }
     .popup-footer{
         @extend %pr;
