@@ -1,0 +1,18 @@
+@import "../../../../assets/scss/_define";
+@import "../../../../assets/scss/common";
+@import "../../../../assets/scss/redcarpet";
+
+.app{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    background-image: none;
+}
+.header{
+    margin-bottom: j(20);
+}
+.image{
+    @extend %ma;
+    width: j(339);
+    height: auto;
+}
