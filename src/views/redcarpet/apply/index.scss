@@ -48,6 +48,43 @@
     width: j(205);
     height: j(26);
 }
+.check{
+    @extend %df;
+    @extend %aic;
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: j(10);
+}
+.check-item{
+    @extend %cp;
+    @extend %df;
+    @extend %aic;
+    margin: 0 j(20) j(10)  0;
+    &.active{
+        .check-icon{
+            @extend %pr;
+            &:after{
+                @extend %pa;
+                @include tfr(-45deg);
+                content: '';
+                left: j(2);
+                top: j(2);
+                width: j(8);
+                height: j(4);
+                border: 2px solid #097f39;
+                border-top: none;
+                border-right: none;
+                background: transparent;
+            }
+        }
+    }
+}
+.check-icon{
+    width: j(12);
+    height: j(12);
+    border: 2px solid #097f39;
+    margin-right: j(6);
+}
 .radio{
     @extend %df;
     @extend %aic;
