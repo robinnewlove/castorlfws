@@ -11,6 +11,18 @@
     background-color: rgba(255, 255, 255, .3);
     padding: j(22) j(25);
 }
+.title{
+    @extend %tac;
+    font-size: j(18);
+    color: #e40521;
+}
+.bar{
+    @extend %bg1;
+    background-position: 0 j(-169);
+    width: j(300);
+    height: j(8);
+    margin: j(14) 0 j(20) j(-10);
+}
 .input-box{
     @extend %df;
     @extend %aic;
@@ -23,8 +35,13 @@
     width: j(70);
 }
 .input{
-    border: 1px solid #bababa;
+    @extend %df1;
+    line-height: j(26);
     padding: 0 j(10);
+    border: 1px solid #bababa;
+}
+.unit-input{
+    min-width: j(100);
 }
 .value{
     @extend %bsb;
@@ -82,4 +99,7 @@
 .textarea{
     height: j(57);
     padding: j(5) j(10);
+}
+.unit{
+    margin-left: j(10);
 }

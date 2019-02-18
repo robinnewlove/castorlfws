@@ -20,12 +20,24 @@
     <div class="app">
         <div class="header"></div>
         <div class="container">
+            <h2 class="title">预约红毯培训</h2>
+            <div class="bar"></div>
             <div class="input-box">
-                <label class="label key">会议时间</label>
-                <input class="input value" type="text" placeholder=""/>
+                <label class="label key">培训时间</label>
+                <input class="input value" type="date" placeholder=""/>
             </div>
             <div class="input-box">
-                <label class="label key">会议类型</label>
+                <label class="label key">培训时长</label>
+                <div class="value select">
+                    <div class="select">
+                        <select>
+                            <option>-省-</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label key">培训类型</label>
                 <div class="radio value">
                     <div class="radio-item active">
                         <i></i>
@@ -66,7 +78,27 @@
                 </div>
             </div>
             <div class="input-box">
-                <label class="label key">省　　市</label>
+                <label class="label key">培训课程</label>
+                <div class="radio value">
+                   了解与销售
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label key"></label>
+                <div class="select value">
+                    <select>
+                        <option>-请选择具体课程-</option>
+                        <option value="1">珠海</option>
+                        <option value="2">深圳</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <label class="label key">培训人数</label>
+                <input class="input value" type="text" placeholder=""/>
+            </div>
+            <div class="input-box">
+                <label class="label key">培训地址</label>
                 <div class="value select-wrap">
                     <div class="select">
                         <select>
@@ -81,24 +113,21 @@
                 </div>
             </div>
             <div class="input-box">
+                <label class="label key"></label>
+                <textarea class="input value textarea" placeholder="-请输入详细的培训地址（必填）-"></textarea>
+            </div>
+            <div class="input-box">
                 <label class="label key">申请费用</label>
-                <input class="input value" type="text" placeholder=""/>
+                <input class="input value unit-input" type="text" placeholder=""/>
+                <span class="unit">元</span>
             </div>
             <div class="input-box">
-                <label class="label key">人　　数</label>
-                <input class="input value" type="text" placeholder=""/>
-            </div>
-            <div class="input-box">
-                <label class="label key">会议主题</label>
-                <input class="input value" type="text" placeholder=""/>
-            </div>
-            <div class="input-box">
-                <label class="label key">会议说明</label>
+                <label class="label key">备　　注</label>
                 <textarea class="input value textarea"></textarea>
             </div>
         </div>
         <div class="button">
-            <span>提交申请</span>
+            <span>确定</span>
         </div>
     </div>
     <div class="popup-wrap hidden">
