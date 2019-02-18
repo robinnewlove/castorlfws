@@ -128,6 +128,20 @@
     margin-bottom: j(18);
     &:last-child{
         margin-bottom: 0;
+        &:after{
+            @extend %dn;
+        }
+    }
+    &:after{
+        @extend %bg1;
+        @extend %pa;
+        @extend %l50;
+        margin-left: j(-150);
+        content: '';
+        background-position: 0 j(-169);
+        width: j(300);
+        height: j(8);
+        bottom: j(-16);
     }
 }
 .item-value,
