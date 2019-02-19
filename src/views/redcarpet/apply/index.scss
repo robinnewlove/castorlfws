@@ -25,14 +25,16 @@
 }
 .input-box{
     @extend %df;
-    @extend %aic;
     @extend %jcc;
     margin-bottom: j(12);
     color: #2c2c2c;
     font-size: j(13);
 }
 .label{
+    @extend %df;
+    @extend %aic;
     width: j(70);
+    height: j(26);
 }
 .input{
     @extend %df1;
@@ -49,17 +51,9 @@
     height: j(26);
 }
 .check{
-    @extend %df;
-    @extend %aic;
-    @extend %fww;
     height: auto;
-    padding-top: j(10);
 }
 .check-item{
-    @extend %cp;
-    @extend %df;
-    @extend %aic;
-    margin: 0 j(20) j(10)  0;
     &.active{
         .check-icon{
             @extend %pr;
@@ -69,7 +63,7 @@
                 content: '';
                 left: j(2);
                 top: j(2);
-                width: j(8);
+                width: j(6);
                 height: j(4);
                 border: 2px solid #097f39;
                 border-top: none;
@@ -77,7 +71,19 @@
                 background: transparent;
             }
         }
+        .select{
+            @extend %db;
+        }
     }
+    .select{
+       @extend %dn;
+    }
+}
+.check-item-inner{
+    @extend %cp;
+    @extend %df;
+    @extend %aic;
+    height: j(26);
 }
 .check-icon{
     width: j(12);
@@ -116,7 +122,7 @@
 }
 .select{
     @extend %pr;
-    @extend %h100;
+    height: j(26);
     select{
         background: url("../../../assets/images/css/select-icon.png") right center no-repeat;
         background-size: j(26);
