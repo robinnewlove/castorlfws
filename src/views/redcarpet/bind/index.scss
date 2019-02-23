@@ -1,0 +1,117 @@
+@import "../../../assets/scss/_define";
+@import "../../../assets/scss/common";
+
+html{
+    @extend %h100;
+}
+body{
+    background: #fff url('../../../assets/images/css/persion-sign-bg.jpg') center bottom no-repeat;
+    background-size: 100% auto;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.app{
+    @extend %df;
+    @extend %pr;
+    @extend %fdc;
+    @extend %aic;
+}
+
+
+.logo{
+    @extend %pa;
+    width: j(81.5);
+    height: j(21.5);
+    top: j(12);
+    right: j(10);
+    background-color: red;
+}
+
+.form{
+    @extend %df;
+    @extend %aic;
+    @extend %fdc;
+    width: j(254);
+    margin-top: j(85);
+}
+.title{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    width: j(220);
+    padding-bottom: j(8);
+    border-bottom: 2px solid #0f7c43;
+    margin-bottom: j(120);
+    i{
+        width: j(73);
+        height: j(39);
+        margin-right: j(5);
+        background: url("../../../assets/images/css/signin-title-icon.png") center no-repeat;
+        background-size: contain;
+
+    }
+    h2{
+        font-size: j(18);
+        color: #078440;
+    }
+}
+
+.form-box{
+    @extend %bsb;
+    width: j(254);
+    height: j(44);
+    border: 1px solid #0f7c43;
+    margin-bottom: j(10);
+    input{
+        @extend %w100;
+        @extend %h100;
+        @extend %bsb;
+        font-size: j(14);
+        padding: 0 j(10);
+        border: none;
+        background-color: #fff;
+        color: #333;
+    }
+    .select2-selection__arrow{
+        @extend %dn;
+    }
+
+    .select2-selection--single{
+        border: none !important;
+        height: j(42);
+        width: j(254);
+    }
+    .select2-selection__rendered{
+        line-height: j(42) !important;
+        height: j(42) !important;
+    }
+    .select2-selection__rendered,
+    select{
+        @extend %w100;
+        @extend %h100;
+        @extend %bsb;
+        outline: none;
+        padding: 0 j(10);
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        border: none !important;
+        background: url("../../../assets/images/css/select-icon1.png") right center no-repeat;
+        background-size: j(44);
+    }
+}
+
+.sub-button{
+    @extend %cp;
+    @extend %df;
+    @extend %jcc;
+    @extend %aic;
+    @extend %cfff;
+    margin-top: j(40);
+    width: j(254);
+    height: j(44);
+    border: none;
+    background-color: #0f7c43;
+    font-size: j(15);
+}
