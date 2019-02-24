@@ -1,0 +1,129 @@
+@import "../../../assets/scss/_define";
+@import "../../../assets/scss/common";
+@import "../../../assets/scss/redcarpet";
+
+.app{
+    @extend %df;
+    @extend %fdc;
+    @extend %aic;
+    background: none;
+}
+.header{}
+.tab{
+    @extend %w100;
+    @extend %df;
+    @extend %aic;
+    background-color: #ddd;
+}
+.tab-item{
+    @extend %cp;
+    @extend %df;
+    @extend %df1;
+    @extend %aic;
+    @extend %jcc;
+    height: j(40);
+    border-bottom: 2px solid transparent;
+    span,a{
+        color: #333;
+        font-size: j(16);
+    }
+    &.active{
+        border-bottom: 2px solid red;
+        span,a{
+            color: red;
+        }
+    }
+}
+.main{
+
+}
+.select-box{
+    @extend %df;
+    @extend %aic;
+    @extend %jcs;
+    margin: j(10) auto 0;
+    height: j(26);
+    select{
+        width: j(160);
+        background: url("../../../assets/images/css/select-icon.png") right center no-repeat;
+        background-size: j(26);
+        @extend %h100;
+        @extend %bsb;
+        @extend %l0;
+        font-size: j(13);
+        color: #9e9e9e;
+        border: 1px solid #bababa;
+        padding: 0 j(10);
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+    }
+}
+.prompt{
+    @extend %tac;
+    margin-top: j(10);
+    line-height: j(26);
+    font-size: j(18);
+    color: #333;
+    span{
+        color: red;
+    }
+}
+
+.list{
+    margin: j(10) auto 0;
+}
+.item{
+    @extend %bsb;
+    width: j(332);
+    border: 1px solid #dedede;
+    background-color: rgba(255, 255, 255, .3);
+    padding: j(16);
+    margin-bottom: j(20);
+    .button{
+        margin-top: j(10);
+    }
+}
+.con{
+    @extend %df;
+    @extend %fww;
+}
+.text{
+    @extend %df;
+    @extend %aic;
+    font-size: j(12);
+    color: #999;
+    margin-top: j(6);
+    i{
+        @extend %db;
+        width: j(6);
+        height: j(6);
+        border-radius: 50%;
+        background-color: #a7d2b7;
+        margin-right: j(5);
+    }
+    .color{
+        @extend %df1;
+        @extend %oh;
+        color: #333;
+        height: j(16);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    span{
+        @extend %db;
+        margin-right: j(4);
+    }
+    &:nth-child(even){
+        @extend %df1;
+    }
+    &:nth-child(odd){
+        width: j(180);
+    }
+    &:last-child{
+        width: auto;
+    }
+    &.max{
+        width: 100%;
+    }
+}
