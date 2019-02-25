@@ -30,15 +30,20 @@
     border-radius: j(10);
 }
 .item{
+    margin-bottom: j(20);
+    padding-bottom: j(20);
+    border-bottom: 1px solid #dedede;
     dt{
         @extend %df;
-        @extend %aic;
         line-height: 1.5;
         font-size: j(16);
         color: #333;
-        margin-bottom: j(10);
-        span{
-            @extend %dib;
+        margin-bottom: j(20);
+        i{
+            @extend %df;
+            @extend %jcc;
+            @extend %aic;
+            @extend %tac;
             width: 20px;
             height: 20px;
             border-radius: 50%;
@@ -46,10 +51,17 @@
             color: #fff;
             margin-right: j(6);
         }
+        span{
+            @extend %df1;
+        }
     }
     dd{
         @extend %df;
-        @extend %aic;
+        @extend %cp;
+        margin-top: j(12);
+        line-height: 1.5;
+        font-size: j(16);
+        color: #333;
         i{
             @extend %bg1;
             @extend %oh;
@@ -62,5 +74,13 @@
                 background-position: j(-110) 0;
             }
         }
+        span{
+            @extend %df;
+            @extend %df1;
+            @extend %aic;
+        }
+    }
+    &:last-child{
+        border-bottom: none;
     }
 }
