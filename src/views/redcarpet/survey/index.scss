@@ -83,4 +83,49 @@
     &:last-child{
         border-bottom: none;
     }
+    &.check{
+        dd{
+            i{
+                @extend %pr;
+                @extend %bsb;
+                width: j(20);
+                height: j(20);
+                border: 2px solid #097f39;
+                margin-right: j(6);
+                background: none;
+                &:after{
+                    @extend %dn;
+                    @extend %pa;
+                    @include tfr(-45deg);
+                    content: '';
+                    left: j(3);
+                    top: j(2);
+                    width: j(8);
+                    height: j(6);
+                    border: 2px solid #097f39;
+                    border-top: none;
+                    border-right: none;
+                    background: transparent;
+                }
+            }
+            &.active{
+                i{
+                    &:after{
+                        @extend %db;
+                    }
+                }
+            }
+        }
+    }
+    &.textarea{
+        textarea{
+            @extend %bsb;
+            @extend %df1;
+            padding: j(10);
+            line-height: 1.5;
+            font-size: j(16);
+            color: #333;
+            border: 1px solid #ddd;
+        }
+    }
 }
