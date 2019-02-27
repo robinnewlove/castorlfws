@@ -2,6 +2,9 @@
 @import "../../../assets/scss/common";
 @import "../../../assets/scss/redcarpet";
 
+html,body{
+    background: #f6f7f9;
+}
 .app{
     @extend %df;
     @extend %fdc;
@@ -13,7 +16,8 @@
     @extend %w100;
     @extend %df;
     @extend %aic;
-    background-color: #ddd;
+    background-color: #f6f7f9;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, .1);
 }
 .tab-item{
     @extend %cp;
@@ -21,16 +25,16 @@
     @extend %df1;
     @extend %aic;
     @extend %jcc;
-    height: j(40);
+    height: j(34);
     border-bottom: 2px solid transparent;
     span,a{
         color: #333;
-        font-size: j(16);
+        font-size: j(14);
     }
     &.active{
-        border-bottom: 2px solid red;
+        border-bottom: 3px solid #be152f;
         span,a{
-            color: red;
+            color: #be152f;
         }
     }
 }
@@ -41,11 +45,11 @@
     @extend %df;
     @extend %aic;
     @extend %jcs;
-    margin: j(10) auto 0;
+    margin: j(20) auto 0;
     height: j(26);
     select{
         width: j(160);
-        background: url("../../../assets/images/css/select-icon.png") right center no-repeat;
+        background: #fff url("../../../assets/images/css/select-icon.png") right center no-repeat;
         background-size: j(26);
         @extend %h100;
         @extend %bsb;
@@ -63,7 +67,7 @@
     @extend %tac;
     margin-top: j(10);
     line-height: j(26);
-    font-size: j(18);
+    font-size: j(16);
     color: #333;
     span{
         color: red;
@@ -77,7 +81,8 @@
     @extend %bsb;
     width: j(332);
     border: 1px solid #dedede;
-    background-color: rgba(255, 255, 255, .3);
+    //background-color: rgba(255, 255, 255, .3);
+    background-color: #fff;
     padding: j(16);
     margin-bottom: j(20);
     .button{
