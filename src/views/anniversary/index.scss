@@ -1,0 +1,55 @@
+@import "../../assets/scss/_define";
+@import "../../assets/scss/dcalendar.picker";
+
+html, body {
+    @extend %h100;
+}
+body{
+    background: #006e5d url("../../assets/images/css/calendar-bg.jpg") center top no-repeat;
+    background-size: 100% auto;
+}
+.logo{
+    @extend %pa;
+    bottom: j(30);
+    right: j(30);
+    width: j(121);
+    height: j(73);
+    background: url("../../assets/images/css/calendar-logo.png") no-repeat;
+    background-size: contain;
+}
+.app{
+    @extend %df;
+    @extend %aic;
+    @extend %fdc;
+    @extend %w100;
+    @extend %oh;
+    h3{
+        margin-top: j(100);
+        width: j(250);
+        font-size: j(14);
+        color: #666;
+        line-height: j(40);
+    }
+}
+.calendar{
+    width: j(250);
+    box-shadow: 0 0 j(10) j(10) rgba(0,0,0,.05);
+    .date:hover,
+    .date:active{
+        background-color: #006e5d !important;
+        color: #fff;
+        border-radius: j(8);
+    }
+}
+.button-text{
+    @extend %df;
+    @extend %cp;
+    @extend %aic;
+    @extend %jcc;
+    margin-top: j(30);
+    border-radius: j(8);
+    width: j(120);
+    height: j(30);
+    color: #fff;
+    background-color: #278a49;
+}
