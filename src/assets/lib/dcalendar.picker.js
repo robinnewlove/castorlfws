@@ -20,8 +20,8 @@ if (typeof jQuery === 'undefined') { throw new Error('DCalendar.Picker: This plu
 
         DCalendar = function(elem, options) {
             this.calendar = $(elem);
-            this.today = new Date();	//system date
-
+            this.today = $(elem).prev().val() ? new Date($(elem).prev().val()) : new Date();	//system date
+            this.options = options;
             //current selected date, default is today if no value given
             if(this.calendar.prev().val() === '') {
                 this.date = new Date();
@@ -31,7 +31,6 @@ if (typeof jQuery === 'undefined') { throw new Error('DCalendar.Picker: This plu
             }
 
             this.viewMode = 'days';
-            this.options = options;
             this.selected = (this.date.getMonth() + 1) + "/" + this.date.getDate() + "/" + this.date.getFullYear();
             this.minDate = this.calendar.prev().data('mindate');
             this.maxDate = this.calendar.prev().data('maxdate');
@@ -137,9 +136,10 @@ if (typeof jQuery === 'undefined') { throw new Error('DCalendar.Picker: This plu
         },
 
         reformatDate : function (date) {
+            console.log(this)
+            console.log(this.options)
             var that = this,
                 format = that.options.format;
-
             return {
                 m: date.substring(format.indexOf('m'), format.lastIndexOf('m') + 1),
                 d: date.substring(format.indexOf('d'), format.lastIndexOf('d') + 1),

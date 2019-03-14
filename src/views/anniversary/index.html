@@ -13,6 +13,7 @@
     <div class="logo"></div>
     <div class="app">
         <h3>标记您的专属纪念日：</h3>
+        <input type="hidden" value="2019/02/02">
         <table id='mycalendar' class='calendar'></table>
         <div class="button-text"><span>确　定</span></div>
     </div>
@@ -21,7 +22,7 @@
     <script>
         var date = '';
         $('#mycalendar').dcalendar({
-            format: 'yyyy/mm/dd'
+            format: 'yyyy/mm/dd',
         }).on('selectdate', function(e){
             console.log(e)
             console.log(e.date)
