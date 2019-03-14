@@ -40,6 +40,10 @@ body{
         color: #fff;
         border-radius: j(8);
     }
+    #currDay{
+        @extend %fwb;
+        color: red;
+    }
 }
 .button-text{
     @extend %df;
