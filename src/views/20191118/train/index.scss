@@ -1,6 +1,12 @@
 @import "../../../assets/scss/_define";
 @import "../../../assets/scss/common";
 @import "../../../assets/scss/redcarpet";
+.app{
+    //background: url('~assets/images/css/workshop-top-bg.jpg') center j(40) no-repeat;
+    background: url('../../../assets/images/css/20191118-head-bg.jpg') center j(39) no-repeat;
+    background-size: 100% auto;
+    padding-bottom: j(30);
+}
 
 .app{
     @extend %df;
